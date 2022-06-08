@@ -474,7 +474,7 @@ h3 {
 
 /* Кнопки фильтра */
 
-.portfoli0-btn {
+.portfolio-btn {
     display: flex;
     flex-direction: row;
     list-style: none;
