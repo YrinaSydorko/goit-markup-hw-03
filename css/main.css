@@ -74,14 +74,16 @@ h3 {
 
 
 /* WebStudio */
-
-
+.list-reset {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
 .container {
-    width: 1200px;
-    padding-left: 0px;
-    padding-right: 15px;
+    max-width: 1200px;
+    padding: 15px;
     margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
     
 
@@ -461,25 +463,18 @@ h3 {
     color: var(--accent-second-color);
 }
 
-/* Portfolio */
+/* Portfolio  List*/
 .section.content {
     padding-top: 94;
     padding-bottom: 94;
 }
 
-.portfolio-btn {
-    display: flex;
-        flex-direction: row;
-        list-style: none;
-        justify-content: center;
-        margin-bottom: 50px
 
-}
 
 
 /* Кнопки фильтра */
 
-.button {
+.portfoli0-btn {
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -547,8 +542,10 @@ h3 {
 }
 
 /* Список проектов */
-
-.project-title {
+.portfolio-item {
+    display: block;
+}
+.portfolio-title {
     margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
@@ -557,7 +554,7 @@ h3 {
     color: var(--primary-text-color);
 }
 
-.project-text {
+.portfolio-text {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
@@ -566,9 +563,17 @@ h3 {
 
 .portfolio-list {
     display: flex;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        row-gap: 29px;
+        margin-top: 50px;
+        
     }
-
+.portfolio-subtitle {
+    font-size: 16px;
+    line-height: calc(30 / 2);
+    letter-spacing: 0.03em;
+}
 .block-title {
     border-right: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
@@ -580,114 +585,13 @@ h3 {
     width: calc((100% - 60px) / 3);
 }
 
-.portfolio-container:nth-child(-n + 6) {
-    margin-bottom: 30px;
-}
-
-.portfolio-container:nth-child(3n) {
-    margin-right: 0px;
-}
-
-
-/*portfolio*/
-.btn-secondary {
-    color: var(--titlt-text-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.85;
-    letter-spacing: 0.03em;
-    cursor: pointer;
-    background-color: var(--accent-second-color);
-}
-
-.btn-secondary:hover,
-.btn-secondary:focus {
-    color: var(--main-color);
-    background-color: var(--accent-color);
-}
-
-.current-btn {
-    color: var(--main-color);
-    background-color: var(--accent-color);
-}
-
-.caption-title {
-    color: var(--titlt-text-color);
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-}
-
-.caption-subtitle {
-    font-size: 16px;
-    line-height: 1.18;
-}
-
-.nav-list {
-    font-family: Roboto;
-    color: #000;
-}
-
-.nav-list:hover {
-    color: black;
-}
-
-.nav-list:focus {
-    color: blue;
-}
-
-/* Список проектов */
-
-.project-title {
-    margin-bottom: 4px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: var(--title-text-color);
-}
-
-.project-text {
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.03em;
-    color: #757575;
-}
-
-.project-list {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.block-title {
-    border-right: 1px solid #eeeeee;
-    border-bottom: 1px solid #eeeeee;
-    border-left: 1px solid #eeeeee;
-    padding: 20px 24px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
 
 
 
 
-.project-container {
-    width: calc((100% - 60px) / 3);
-    margin-right: 30px;
-}
 
-.project-container:nth-child(-n + 6) {
-    margin-bottom: 30px;
-}
 
-.project-container:nth-child(3n) {
-    margin-right: 0px;
-}
-.portfolio-container {
-    width: calc((100% - 60px) / 3);
-    margin-right: 30px;
-}
+
 .portfolio-list {
     font-family: Roboto;
     font-size: 6%;
