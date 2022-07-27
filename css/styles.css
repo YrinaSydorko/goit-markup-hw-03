@@ -236,8 +236,8 @@ color: var(--accent-color);
 }
 
 .hero-button {
-    width: 200px;
-    height: 50px;
+    /*width: 200px;
+    height: 50px;*/
     padding: 10px 32px;
     display: inline-block;
     font-family: inherit;
